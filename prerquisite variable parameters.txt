@@ -1,0 +1,15 @@
+$keyvaultname = "aksdemocluster-kv"
+$location = "eastus"
+$keyvaultrg = "aksdemo-rg"
+$sshkeysecret = "akssshpubkey"
+$spnclientid = "0c93839a-14cd-4d44-b9d4-4c42f25bd046"
+$clientidkvsecretname = "spn-id"
+$spnclientsecret = ""
+$spnkvsecretname = "spn-secret"
+$spobjectID = "0c93839a-14cd-4d44-b9d4-4c42f25bd046"
+$userobjectid = "0c93839a-14cd-4d44-b9d4-4c42f25bd046"
+
+
+here $spnclientid, $spobjectID, $userobjectid all are same values, you can check the client id from app registration under entra ID service.
+
+you should create a new client secret and copy the value and provide for $spnclientsecret
